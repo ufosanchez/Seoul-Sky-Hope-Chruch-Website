@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700&display=swap&family=Inter:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    font-family: "Poppins";
+}
+
+.shadow{
+    box-shadow: 0px 5px 8px #888888;
+    /* position: fixed;
+    width: 100%;
+    background-color: white; */
+}
+
+/* NAV BAR UNDERLINE */
+
+.underline-progressive {
+    position: relative;
+}
+  
+.underline-progressive::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #AE0303;
+    transition: width 0.5s ease-out;
+}
+  
+.underline-progressive:hover::before {
+    width: 100%; 
+}
+
+/* NAV BAR UNDERLINE */
+
+.underline-admin {
+    position: relative;
+}
+  
+.underline-admin::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #AE0303;
+    transition: width 0.5s ease-out;
+}
+  
+.underline-admin:hover::before {
+    width: 100%; 
+}
+
+/* MAP */
+
+#map {
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* DROPDOWN TRAVEL MODE */
+
+.travel-mode {
+    position: absolute;
+    z-index: 1;
+    margin: 60px 0 0 12px;
+    padding: 8px 4px;
+    border-radius: 10px;
+    background-color: #AE0303;
+    color: white;
+    border: 2px solid black;
+}
+
+/* .custom-select {
+    position: relative;
+    width: 200px;
+}
+
+.select-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.select-options {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.select-options .option {
+    padding: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.select-options .option:hover {
+    background-color: #f0f0f0;
+}
+
+.select-options::after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+
+/* Bible */
+
+.p::before {
+    content: "__";
+    color: white;
+}
+
+.v{
+    vertical-align: 30%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #AE0303;
+}
+
+.v::after {
+    content: ". ";
+}
+
+/* sermnos */
+
+@media screen and (max-width:850px) {
+    .sermon_flex {
+        justify-content: center;
+    }
+}
+
+/* youtube */
+.youtube-video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.youtube-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
